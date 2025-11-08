@@ -1,25 +1,5 @@
 *
 
-.container {
-    background: rgb(77, 77, 77);
-    padding: 5rem;
-}
-
-.row {
-    background: #3a7fff;
-    margin: .2rem;
-    padding: .2rem;
-}
-
-.coluna {
-    border: 5px solid #fff;
-    background: #f5a236;
-}
-
-/* .col-lg-1 {
-    background: purple;
-    margin: 1rem;
-} */
 
 
 
@@ -41,7 +21,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .container {
@@ -56,6 +36,7 @@ h1 {
 }   
 
 p {
+
     line-height: 1.6;
     color: #ffffff;
 }

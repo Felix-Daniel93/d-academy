@@ -9,16 +9,76 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- CSS Base -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- ALT + Shift + F -->
+    <header id="header" class="header">
 
+        <nav class="navbar navbar-expand-lg bg-primary">
+
+
+            <div class="container">
+
+                <a class="navbar-brand" href="#">D•Academy</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Botões do Menu -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Início</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Sobre</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicos">Serviços</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#precos">Preços</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#precos">Unidades</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+
+                        </li>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
 
     <!-- Sobre Mim / Sobre a Marca/Produto -->
-    <section class="about" id="about"></section>
+    <section class="about" id="about">
+    </section>
 
+    <section id="servicos">
+        Serviços
+    </section>
+
+      <section id="precos">
+        Preços
+    </section>
+
+      <section id="contato">
+        Contato
+    </section>
 
     <!-- MAX WIDTH -- O - até o valor da Tabela  -->
     <div class="container">
@@ -27,17 +87,76 @@
 
         <div class="row">
 
+
+            <div class="container text-center mt-5">
+                <h1>Bem-vindo à D•Academy</h1>
+                <p class="lead">Sua Distinção, Elevada ao Máximo Padrão..</p>
+                <a href="#" class="btn btn-primary">Comece Agora</a>
+
+            </div>
+
             <!-- Estrutura Imagem -->
-            <div class="col-lg-1 coluna">
-                <img src="img/sobre_mim.png" alt="homem forte figurativo">
+            <div class="col-lg-5">
+                <img src="img/sobre.png" alt="homem forte, desenho artístico." loading="lazy" class="img-fluid">
             </div>
 
-            <div class="col-lg-1 coluna">
-            COLUNA 2
+            <!-- Estruturas dos Textos / Descrição  -->
+            <div class="col-lg-7 coluna">
+                <h3>Sobre Nós</h3>
+                <p>
+                    Na D•Academy, redefinimos a experiência de bem-estar. Somos um santuário exclusivo onde a
+                    excelência encontra a paixão, e o luxo se entrelaça com o máximo desempenho.
+
+                    Cada detalhe foi meticulosamente planejado para oferecer uma jornada inigualável. Nossos espaços são
+                    projetados para elevar sua mente e corpo, equipados com tecnologia de ponta e um design
+                    arquitetônico sofisticado.
+
+                    Nossa equipe é composta por mestres em suas áreas, dedicados a guiar você ao seu sucesso, validando
+                    que somos o Cume do Treinamento. Padrão Mundial.
+
+                </p>
+
+                <p class="mb-5">
+                    <em>
+                        Convidamos você a descobrir o privilégio de ser inigualável.
+                    </em>
+                </p>
             </div>
 
+            <ul class="list-unstyled mt-4">
+                <!-- Display Row (linha) -->
 
-        </div>
+                <li>
+                    <i class="bi bi-gem text-primary fs-5"></i>
+                    <div>
+                        <h5 class="mb-1">Treinos Espetaculares</h5>
+                        <p class="mb-0">Explore o seu máximo desempenho e performance de um jeito que você nunca viu.
+                            Ambiente agradável e muito bem frequentado</p>
+                    </div>
+                    Design e Ambiente Exclusivo
+                    <p>Experimente o treinamento em um ambiente cuidadosamente projetado para inspirar. Nossos espaços
+                        combinam estética sofisticada com funcionalidade de elite, oferecendo um refúgio de
+                        tranquilidade e foco, distante do comum. Cada área da D•Academy é uma obra de arte pensada para
+                        otimizar sua experiência e bem-estar.</p>
+                </li>
+
+                <li>
+                    <i class="bi bi-lightning-charge text-warning"></i>
+                    <h5 class="mb-1">Tecnologia e Equipamentos de Ponta</h5>
+                    <p>A D•Academy investe nas inovações mais recentes do mercado global de fitness. Com equipamentos de
+                        última geração e tecnologia integrada, garantimos que cada treino seja otimizado, seguro e
+                        incrivelmente eficaz, impulsionando seus resultados a níveis que você nunca imaginou.</p>
+                </li>
+
+                <li>
+                    <i class="bi bi-person-workspace text-success"></i>
+                    <h5 class="mb-1">Mentoria de Elite e Planos Personalizados</h5>
+                    <p>Nossa equipe de personal trainers é formada por especialistas renomados, prontos para elaborar um
+                        plano de treinamento e nutrição totalmente customizado às suas ambições. Não oferecemos apenas
+                        treinos, mas uma verdadeira mentoria para a vida, garantindo acompanhamento e resultados que
+                        superam todas as expectativas.</p>
+                </li>
+            </ul>
 
 
 
@@ -51,57 +170,51 @@
 
 
 
-        <div class="container text-center mt-5">
-            <h1>Bem-vindo à D•Academy</h1>
-            <p class="lead">Sua Distinção, Elevada ao Máximo Padrão..</p>
-            <a href="#" class="btn btn-primary">Comece Agora</a>
 
-        </div>
 
-        <!-- <footer class="bg-light text-center py-4">
+
+
+
+            <!-- <footer class="bg-light text-center py-4">
         <p class="mb-0">&copy; 2024 D•Academy. Todos os direitos reservados.</p>
 
     </footer> -->
 
-        <div class="container text-center mt-5">
-            <h2>Sobre Nós</h2>
-            <p class="lead">A Qualidade Que Você Exige. A Exclusividade Que Você Merece.</p>
-        </div>
 
-        <div class="container text-center mt-5">
-            <h2>Nossos Cursos</h2>
-            <p class="lead">O Padrão Ouro. Sem Exceções. Sem Comparação para alcançar seus objetivos.</p>
-        </div>
+            <div class="container text-center mt-5">
+                <h2>Nossos Cursos</h2>
+                <p class="lead">O Padrão Ouro. Sem Exceções. Sem Comparação para alcançar seus objetivos.</p>
+            </div>
 
-        <div class="container text-center mt-5">
-            <h2>Contato</h2>
-            <p class="lead">Entre em contato conosco para mais informações ou suporte.</p>
-        </div>
+            <div class="container text-center mt-5">
+                <h2>Contato</h2>
+                <p class="lead">Entre em contato conosco para mais informações ou suporte.</p>
+            </div>
 
-        <!-- <footer class="bg-light text-center py-4">
+            <!-- <footer class="bg-light text-center py-4">
         <p class="mb-0">&copy; 2024 D•Academy. Todos os direitos reservados.</p>
     </footer> -->
 
-        <div class="container text-center mt-5">
-            <h2>Depoimentos</h2>
-            <p class="lead">Veja o que nossos alunos dizem sobre nós.</p>
-        </div>
+            <div class="container text-center mt-5">
+                <h2>Depoimentos</h2>
+                <p class="lead">Veja o que nossos alunos dizem sobre nós.</p>
+            </div>
 
-        <div class="container text-center mt-5">
-            <h2>Blog</h2>
-            <p class="lead">Fique por dentro das últimas novidades e dicas.</p>
-        </div>
+            <div class="container text-center mt-5">
+                <h2>Blog</h2>
+                <p class="lead">Fique por dentro das últimas novidades e dicas.</p>
+            </div>
 
-        <!-- <footer class="bg-light text-center py-4">
+            <!-- <footer class="bg-light text-center py-4">
         <p class="mb-0">&copy; 2024 D•Academy. Todos os direitos reservados.</p>
     </footer> -->
 
-        <div class="container text-center mt-5">
-            <h2>FAQ</h2>
-            <p class="lead">Perguntas frequentes para ajudar você.</p>
+            <div class="container text-center mt-5">
+                <h2>FAQ</h2>
+                <p class="lead">Perguntas frequentes para ajudar você.</p>
 
-            <!-- Bootstrap JS -->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+                <!-- Bootstrap JS -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
