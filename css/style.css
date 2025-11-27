@@ -39,7 +39,7 @@
 
 .hero .carousel-item::before {
     content: "";
-    background: #0000005a;
+    background: #000000a4;
     position: absolute;
     inset: 0;
     z-index: 2;
@@ -63,12 +63,52 @@
 
 .hero p {
     color: white;
+    max-width: 60%;
+    text-align: center;     
+    margin-top: 1rem;
     font-size: 1.2rem;
-    font-weight: 700;
-    /* font-family: ; */
-    animation: fadeInDown 1s both;
-    margin: 1rem 0 2rem 0;  
+
+
 }
+
+
+/* Icones Setas Trocam Slides */
+.hero .carousel-control-prev,
+.hero .carousel-control-next {
+    background: none;
+    font-size: 2rem;
+    line-height: 0;
+    width: 10%;
+    transition: 0.3s;
+    opacity: 0.3;
+}
+
+
+/* destaque do icone clicado / opacidade */
+
+.hero .carousel-control-prev:hover,
+.hero .carousel-control-next:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+    line-height: 0;
+}
+
+.hero .carousel-control-prev:focus,
+.hero .carousel-control-next:focus {
+    opacity: 0.8;
+    line-height: 0;
+}
+
+
+.carousel-indicators .active {
+    background-color: rgb(38, 126, 240); /* cor do indicador ativo */
+}
+
+
+
+
+
+
 
 
 

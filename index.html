@@ -12,6 +12,15 @@
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
 
+  <!-- GLightBox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+
   <!-- CSS Base -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -62,65 +71,90 @@
   <section id="hero" class="hero">
     <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
-      <div class="carousel-inner">
 
 
-        <!-- SLIDE 1 / FOTO 1 -->
 
-        <div class="carousel-item active text-center">
-          <img src="/img/hero/piscina.png" alt="ambiente da academia com psicina e equipamentos de treino"
-            class="d-block w-100">
-          <div class="carousel-container">
-            <h2>Exclusividade e Bem-Estar</h2>
-            <p>
-              Desfrute de um ambiente de treino sereno e sofisticado, onde o design moderno encontra a funcionalidade
-              premium para sua jornada de saúde. Relaxe e revitalize-se em nossa piscina elegante após o treino.
-            </p>
-          </div>
-        </div>
-        <div class="carousel-item text-center">
-          <img src="/img/hero/geral.png" alt="ambiente com homem se alongando" class="d-block w-100">
+      <!-- SLIDE 1 / FOTO 1 -->
 
-
-          <!-- SLIDE 2 / FOTO 2 -->
-          <div class="carousel-container">
-            <h2>Energia e Conexão com a Natureza</h2>
-            <p>
-              Encontre o seu ritmo em um espaço inspirador, onde a luz natural e a vista panorâmica se unem a
-              equipamentos de ponta para otimizar seu desempenho. Sinta a vitalidade em um ambiente que reflete a
-              exclusividade e a paixão pelo bem-estar.
-            </p>
-          </div>
-
-          <!-- SLIDE 3 / FOTO 3 -->
-          <div class="carousel-container">
-            <h2>Amplitude e Foco</h2>
-            <p>
-              Um espaço projetado para o seu máximo desempenho, com equipamentos modernos e um design que inspira cada
-              movimento. Concentre-se em seus objetivos em um ambiente clean e espaçoso.
-            </p>
-          </div>
+      <div class="carousel-item active text-center">
+        <img src="/img/hero/piscina.png" alt="ambiente da academia com psicina e equipamentos de treino">
+        <div class="carousel-container">
+          <h2 data-aos="fade-down">Exclusividade e Bem-Estar</h2>
+          <p data-aos="fade-down" data-aos-delay="300">
+            Desfrute de um ambiente de treino sereno e sofisticado, onde o design moderno encontra a funcionalidade
+            premium para sua jornada de saúde. Relaxe e revitalize-se em nossa piscina elegante após o treino.
+          </p>
         </div>
       </div>
+
+
+
+      <!-- SLIDE 2 / FOTO 2 -->
+      <div class="carousel-item text-center">
+        <img src="/img/hero/geral.png" alt="ambiente com homem se alongando">
+        <div class="carousel-container">
+          <h2>Energia e Conexão com a Natureza</h2>
+          <p>
+            Encontre o seu ritmo em um espaço inspirador, onde a luz natural e a vista panorâmica se unem a
+            equipamentos de ponta para otimizar seu desempenho. Sinta a vitalidade em um ambiente que reflete a
+            exclusividade e a paixão pelo bem-estar.
+          </p>
+        </div>
+      </div>
+
+      <!-- SLIDE 3 / FOTO 3 -->
+      <div class="carousel-item text-center">
+        <img src="/img/hero/aparelho.png" alt="ambiente com homem se alongando">
+        <div class="carousel-container">
+          <h2>Amplitude e Foco</h2>
+          <p>
+            Um espaço projetado para o seu máximo desempenho, com equipamentos modernos e um design que inspira cada
+            movimento. Concentre-se em seus objetivos em um ambiente clean e espaçoso.
+          </p>
+        </div>
+      </div>
+
 
       <!-- Botões de navegação -->
 
       <!-- Voltar  -->
-      <a href="#hero-crousel" role="button" class="carousel-control-prev" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
 
-      </a>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+
+      </button>
+
 
       <!-- Avançar -->
-      <a href="#hero-crousel" role="button" class="carousel-control-next" data-bs-slide="next">
-        <span class="carousel-control-prev-icon bi bi-chevron-right" aria-hidden="true"></span>
+      <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
 
-      </a>
+
+      <div class="carousel-indicators">
+
+        <!-- Um botão para cada imagem do Slie Carrosel -->
+
+        <!-- Slide 1 -->
+        <button class="active" type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" aria-current="true"
+          aria-label="Slide 1">
+        </button>
+
+        <!-- Slide 2 -->
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2">
+        </button>
+
+        <!-- Slide 3 -->
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3">
+        </button>
 
 
-      <ol class="carousel-indicators">
 
-      </ol>
+
+      </div>
 
     </div>
   </section>
@@ -294,7 +328,7 @@
     </div>
   </section>
 
-  <section class="servicos" id="servicos">
+  <section class="servicos pt-5 mb-5" id="servicos">
 
     <div class="container text-center">
       <!-- Título ou Subtítulo -->
@@ -422,10 +456,97 @@
   </section>
 
 
-  <section class="servicos pt-5" id=servicos>
+
+
+  <section class="unidades pt-5 mb-5" id="unidades">
+
+    <!-- Título da Seção -->
+    <div class="container text-center"></div>
+    <h2 class="badge rounded-pill text-bg-info">Unidades</h2>
+
+
+    <div class="fs-3">
+      <span>Conheça as nossos unidades</span>
+      <span class="text-primary fw-bold">Unidades</span>
+    </div>
+
+
+
+    <!-- Estrutura da Galeria -->
+    <div class="">
+
+      <!-- ISOTOPE // Mansory -->
+
+      <!-- Filtro -->
+      <div class="isotope-layout" data-default-filter="*" data-layout="mansory">
+
+        <!-- Botões Filtro -->
+        <ul class="portifolio-filters isotope-filters">
+
+          <!-- Todos ou o Reset / Limpar a Seleção -->
+          <li data-filter="*" class="silter-active">Todos</li>
+          <li data-filter="">Vestiários</li>
+          <li data-filter="">Piscinas</li>
+          <li data-filter="">Aparelhagens</li>
+          <li data-filter="">Estacionamentos</li>
+        </ul>
+
+        <div class="row g-0 isotope-container">
+
+          <!-- Fotos 1 Colunas Bootstrap-->
+          <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item">
+
+            <div class="portfolio-content">
+              <img src="img/galeria/aparelhagem1.png" alt="aparelhos de musculação modernos" class="img-fluid">
+
+              <div class="portfolio-info">
+                <!-- Link Foto -->
+                <a href="img/galeria/aparelhagem1.png" class="glightbox preview-link">
+                  <i class="bi bi-zoom-in"></i>
+
+                </a>
+
+
+                <a href=""></a>
+              </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+          </div>
+
+          <!-- Fotos 1 Colunas Bootstrap-->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            FOTO 2
+          </div>
+
+          <!-- Fotos 1 Colunas Bootstrap-->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            FOTO 3
+          </div>
+
+          <!-- Fotos 1 Colunas Bootstrap-->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            FOTO 4
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+
+    </div>
 
   </section>
-
 
   <!-- C-T-A Call to Action -->
   <section class="cta" id="cta">
@@ -455,10 +576,25 @@
 
   </section>
 
+  <section class="unidades" id="unidades">
+    <section class=" pt-5 mb-5" id="servicos"></section>
+
+    <!-- Título da seção -->
+    <div class="container">
+      <h2></h2>
+    </div>
+  </section>
 
 
+  <!-- Isotope -->
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
 
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- GLightBox JS  -->
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
@@ -466,9 +602,21 @@
   <!-- Contador Stats -->
   <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
 
+
+  <!-- JavaScript animação -->
   <script>
     new PureCounter();
+    AOS.init(
+        {duration: 1200}
+    );
+
+    const lightbox = GLightbox({
+      
+    });
+
+
   </script>
+
 </body>
 
 </html>
